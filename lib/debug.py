@@ -1,9 +1,12 @@
-#!/usr/bin/env python3
+import pdb
+import conference_badges  # Import your conference_badges.py file
 
-from conference_badges import (
-    badge_maker, batch_badge_creator,
-    assign_rooms, printer
-)
+if __name__ == "__main__":
+    # Updated list of attendees:
+    attendees = ["Stephan", "Mark", "Keren", "Bat-Tziyon", "Samuel", "Pascalia"]
 
-if __name__ == '__main__':
-    import ipdb; ipdb.set_trace()
+
+    # Start debugging the print_badges_and_assignments function
+    pdb.run('conference_badges.print_badges_and_assignments(attendees)')
+
+    # You can set breakpoints and inspect variables using pdb commands
